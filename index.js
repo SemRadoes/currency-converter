@@ -1,0 +1,1 @@
+const inputcurrency = document.querySelector('#inputcurrencyid');

@@ -21,8 +21,13 @@
             <select class="inputcurrency" disabled id="inputcurrencyid" class="form-select" aria-label="Default select example">
                 <option value="euro">€ euro</option>
             </select>
-            <div class="inputflexbox"><span class="w-25">€</span><input name="inputcurrency" id="userinputvalue" class="form-control w-75"></div>
+            <div class="inputflexbox"><span class="w-25">€</span><input name="inputcurrency" id="userinputvalue" type="number" class="form-control w-75"></div>
             
+        </div>
+        <div class="divinbetween">
+            <div>-----------></div>
+            <button type="submit" class="btn btn-success">Validate</button>
+            <div>-----------></div>
         </div>
 		<div class="right-currency">
             <select class="inputcurrency" id="outputcurrencyid" class="form-select" aria-label="Default select example">
@@ -30,7 +35,7 @@
                 <option value="roebel">roebel</option>
                 <option value="Kroon">Deense Kroon</option>
             </select>
-            <div class="inputflexbox"><span class="w-25">$</span><input name="inputcurrency" id="userinputvalue" class="form-control w-75"></div>
+            <div class="inputflexbox"><span class="w-25">$</span><input name="inputcurrency" id="userinputvalue" type="number" readonly class="form-control w-75"></div>
         </div>
 	</body>
 </html>
