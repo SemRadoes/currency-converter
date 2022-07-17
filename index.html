@@ -18,24 +18,27 @@
 	</head>
 	<body>
 		<div class="left-currency">
-            <select class="inputcurrency" disabled id="inputcurrencyid" class="form-select" aria-label="Default select example">
+            <select class="inputcurrency" id="inputcurrencyid" class="form-select" aria-label="Default select example">
                 <option value="euro">€ euro</option>
+                <option value="dollar">$ dollar</option>
+                <option value="roebel">₽ roebel</option>
+                <option value="Kroon">kr. Deense Kroon</option>
             </select>
-            <div class="inputflexbox"><span class="w-25">€</span><input name="inputcurrency" id="userinputvalue" type="number" class="form-control w-75"></div>
+            <div class="inputflexbox"><span id="inputspan" class="w-25">€</span><input name="inputcurrency" id="userinputvalue" type="number" class="form-control w-75"></div>
             
         </div>
         <div class="divinbetween">
-            <div>-----------></div>
             <button type="submit" class="btn btn-success">Validate</button>
-            <div>-----------></div>
+            <div id="arrow">&#8594</div>
         </div>
 		<div class="right-currency">
             <select class="inputcurrency" id="outputcurrencyid" class="form-select" aria-label="Default select example">
-                <option value="dollar">$ dollar</option>
+                <option value="euro">€ euro</option>
+                <option value="dollar" selected>$ dollar</option>
                 <option value="roebel">roebel</option>
                 <option value="Kroon">Deense Kroon</option>
             </select>
-            <div class="inputflexbox"><span class="w-25">$</span><input name="inputcurrency" id="userinputvalue" type="number" readonly class="form-control w-75"></div>
+            <div class="inputflexbox"><span id="outputspan" class="w-25">$</span><input name="inputcurrency" id="useroutputvalue" type="number" readonly class="form-control w-75"></div>
         </div>
 	</body>
 </html>
